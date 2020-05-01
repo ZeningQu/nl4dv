@@ -309,7 +309,7 @@ Sets the dataset
 
 ### nl4dv.analyze_query():
 Calls helper functions to analyze query
-* `args`: query(str)
+* `args`: query(str), debug(bool)
 * `return`: `dict()` containing attributeMap, taskMap, and visList
 
 ### nl4dv.render_vis():
@@ -346,13 +346,13 @@ e.g. {"name": "stanford", "model": "stanford-english-corenlp-2018-10-05-models.j
 
 ### nl4dv.set_reserve_words()
 Custom STOPWORDS that should NOT removed from the query, as they might be present in the domain.
-e.g. `A` in grades dataset
+e.g. `A` in a grades dataset so that the character 'A' does not get removed as a default stopword (article).
 * `args`: reserve_words (list)
 * `return`: `None`
 
 ### nl4dv.set_ignore_words()
 Sets words that should be IGNORED in the query, i.e. NOT lead to the detection of attributes and tasks
-E.g. `movie` in movies dataset
+E.g. `movie` in movies dataset since this may conflict with data values such as "Scary Movie"
 * `args`: ignore_words (list)
 * `return`: `None`
 
