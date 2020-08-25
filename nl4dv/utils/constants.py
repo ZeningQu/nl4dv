@@ -1,15 +1,16 @@
 # Map of "visualizations" that can be explicitly requested and their corresponding keywords to look for in the query.
 # allow ' ' (space) in keywords? eg. bar chart / scatter plot ,etc ?
 vis_keyword_map = {
-    'barchart': {'bar chart', 'barchart'},
-    'scatterplot': {'scatter plot', 'scatterplot', 'scatter'},
-    'boxplot': {'box plot', 'boxplot'},
-    'linechart': {'time series', 'timeseries', 'linechart', 'line chart'},
-    'areachart': {'area chart', 'areachart'},
-    'stripplot': {'tick plot', 'tickplot', 'strip plot', 'stripplot'},
-    'piechart': {'pie chart', 'piechart'},
-    'donutchart': {'donut chart', 'donutchart'},
-    'histogram': {'histogram'}
+    'barchart': {'bar chart', 'barchart', 'bar', 'histogram', 'distribution'},
+    'scatterplot': {'scatter plot', 'scatterplot', 'scatter', 'correlation', 'cluster'},
+    'boxplot': {'box plot', 'boxplot', 'quantile', 'median', 'outlier'},
+    'linechart': {'time serie', 'timeserie', 'over time', 'by day', 'by month', 'by year', 'history', 'linechart', 'line chart', 'line'},
+    'areachart': {'area chart', 'areachart', 'area', 'mountain', 'stream', 'streamgraph', 'stream graph', 'stream plot'},
+    'stripplot': {'tick plot', 'tickplot', 'strip plot', 'strip plot', 'stripplot', 'tick', 'dot plot', 'dotplot', 'dot', 'circle', 'scatter', 'scatterplot'},
+    'piechart': {'pie chart', 'piechart', 'pie', 'round', 'circle'},
+    'donutchart': {'donut chart', 'donutchart', 'donut', 'ring', 'round', 'circle'},
+    'histogram': {'histogram'},
+    'map': {'map', 'world', 'globe', 'global', 'country', 'countri', 'state', 'province', 'city', 'citi', 'county', 'counti', 'zip code'}
 }
 
 vis_to_task_mapping = {
