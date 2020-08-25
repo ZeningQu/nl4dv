@@ -13,8 +13,8 @@ class VisGenie:
     def extract_vis_type(self, query_ngrams):
         for ngram in query_ngrams:
             for vis_type, vis_keywords in self.nl4dv_instance.vis_keyword_map.items():
-                if query_ngrams[ngram]["lower"] in vis_keywords:
-                    return vis_type, query_ngrams[ngram]["lower"]
+                if query_ngrams[ngram]["stemmed_lower"] in vis_keywords:
+                    return vis_type, query_ngrams[ngram]["stemmed_lower"]
 
         return None, None
 
