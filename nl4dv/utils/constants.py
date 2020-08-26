@@ -10,7 +10,7 @@ vis_keyword_map = {
     'piechart': {'pie chart', 'piechart', 'pie', 'round', 'circle'},
     'donutchart': {'donut chart', 'donutchart', 'donut', 'ring', 'round', 'circle'},
     'histogram': {'histogram'},
-    'map': {'map', 'world', 'globe', 'global', 'country', 'countri', 'state', 'province', 'city', 'citi', 'county', 'counti', 'zip code'}
+    'map': {'map', 'heatmap', 'choropleth', 'choroplethmap', 'contour', 'contourmap', 'spikemap', 'bubblemap', 'world', 'worldwide', 'globe', 'global', 'country', 'countri', 'nation', 'national', 'international', 'nationwide', 'state', 'province', 'city', 'citi', 'county', 'counti', 'zip code', 'capitol', 'airport', 'geo', 'geographical', 'location'}
 }
 
 vis_to_task_mapping = {
